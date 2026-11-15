@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un mundo lleno de aventuras, productos y superpoderes.">
+    <title>Powerpuff Store | Las Chicas Superpoderosas</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                POWERPUFF
+                <span class="logo-store">STORE</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="Pages/tienda.html">Tienda</a></li>
+                <li><a href="Pages/personajes.html">Personajes</a></li>
+                <li><a href="Pages/juego.html">Juego</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="Pages/tienda.html" aria-label="Ir a favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="Pages/tienda.html" class="carrito-icono" aria-label="Carrito">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="contadorCarrito">0</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-contenido">
+                <span class="etiqueta">✦ BIENVENIDOS A SALTADILLA ✦</span>
+
+                <h1>
+                    ¡EL PODER ESTÁ
+                    <span>EN TUS MANOS!</span>
+                </h1>
+
+                <p>
+                    Tres pequeñas heroínas, infinitas aventuras
+                    y un universo lleno de cosas increíbles por descubrir.
+                </p>
+
+                <div class="hero-botones">
+                    <a href="Pages/tienda.html" class="btn btn-rosa">
+                        EXPLORAR TIENDA <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="Pages/juego.html" class="btn btn-blanco">
+                        <i class="fa-solid fa-gamepad"></i> JUGAR AHORA
+                    </a>
+                </div>
+
+                <div class="hero-estadisticas">
+                    <div>
+                        <strong>03</strong>
+                        <span>Heroínas</span>
+                    </div>
+                    <div>
+                        <strong>∞</strong>
+                        <span>Aventuras</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Actitud</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-imagen">
+                <div class="hero-circulo"></div>
+                <img src="Assets/Personajes/Chicas.png"
+                     alt="Bombón, Burbuja y Bellota"
+                     class="hero-personajes">
+
+                <span class="decoracion decoracion-1">✦</span>
+                <span class="decoracion decoracion-2">♡</span>
+                <span class="decoracion decoracion-3">★</span>
+            </div>
+
+            <div class="hero-onda"></div>
+
+        </section>
+
+        <section class="seccion personajes-section" id="personajes">
+
+            <div class="titulo-seccion">
+                <span>CONOCÉ A NUESTRAS HEROÍNAS</span>
+                <h2>PEQUEÑAS, PERO PODEROSAS</h2>
+                <p>¡Cada una tiene algo especial que la hace única!</p>
+            </div>
+
+            <div class="personajes-grid">
+
+                <article class="personaje-card bombon">
+                    <div class="personaje-imagen">
+                        <img src="Assets/Personajes/Bombon.png" alt="Bombón">
+                    </div>
+                    <h3>BOMBÓN</h3>
+                    <p>La líder del equipo. Inteligente, responsable y valiente.</p>
+                </article>
+
+                <article class="personaje-card burbuja">
+                    <div class="personaje-imagen">
+                        <img src="Assets/Personajes/Burbuja.png" alt="Burbuja">
+                    </div>
+                    <h3>BURBUJA</h3>
+                    <p>Dulce, alegre y sensible. ¡Pero no la subestimes!</p>
+                </article>
+
+                <article class="personaje-card bellota">
+                    <div class="personaje-imagen">
+                        <img src="Assets/Personajes/Bellota.png" alt="Bellota">
+                    </div>
+                    <h3>BELLOTA</h3>
+                    <p>La más rebelde del grupo. Fuerte, decidida y audaz.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="categorias-section">
+
+            <div class="titulo-seccion">
+                <span>UN UNIVERSO DE COSAS LINDAS</span>
+                <h2>EXPLORÁ NUESTRAS CATEGORÍAS</h2>
+            </div>
+
+            <div class="categorias-grid">
+
+                <a href="Pages/tienda.html?categoria=indumentaria" class="categoria-card categoria-rosa">
+                    <i class="fa-solid fa-shirt"></i>
+                    <h3>Indumentaria</h3>
+                    <span>Descubrir colección →</span>
+                </a>
+
+                <a href="Pages/tienda.html?categoria=accesorios" class="categoria-card categoria-azul">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Accesorios</h3>
+                    <span>Descubrir colección →</span>
+                </a>
+
+                <a href="Pages/tienda.html?categoria=decoracion" class="categoria-card categoria-verde">
+                    <i class="fa-solid fa-house"></i>
+                    <h3>Decoración</h3>
+                    <span>Descubrir colección →</span>
+                </a>
+
+                <a href="Pages/tienda.html?categoria=coleccion" class="categoria-card categoria-lila">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>Coleccionables</h3>
+                    <span>Descubrir colección →</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="seccion productos-section">
+
+            <div class="titulo-seccion">
+                <span>LOS FAVORITOS DE SALTADILLA</span>
+                <h2>PRODUCTOS DESTACADOS</h2>
+                <p>¡Llevate un poquito de magia a casa!</p>
+            </div>
+
+            <div class="productos-grid" id="productosDestacados">
+            </div>
+
+            <div class="centrar">
+                <a href="Pages/tienda.html" class="btn btn-rosa">
+                    VER TODA LA TIENDA <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="juego-banner">
+
+            <div class="juego-texto">
+                <span>✦ UNA NUEVA MISIÓN TE ESPERA ✦</span>
+                <h2>¡SALVÁ SALTADILLA!</h2>
+                <p>
+                    Los villanos están causando problemas.
+                    Elegí a tu heroína favorita y preparate para combatir.
+                </p>
+
+                <a href="Pages/juego.html" class="btn btn-blanco">
+                    <i class="fa-solid fa-gamepad"></i> ENTRAR AL JUEGO
+                </a>
+            </div>
+
+            <div class="juego-decoracion">
+                <i class="fa-solid fa-bolt"></i>
+                <span>POWER!</span>
+            </div>
+
+        </section>
+
+        <section class="test-banner">
+
+            <div>
+                <span>¿TENÉS LO NECESARIO PARA SER UNA HEROÍNA?</span>
+                <h2>¿QUÉ CHICA SUPERPODEROSA SOS?</h2>
+                <p>Descubrí qué personaje representa mejor tu personalidad.</p>
+                <a href="Pages/test.html" class="btn btn-rosa">DESCUBRIR MI PERSONAJE</a>
+            </div>
+
+            <div class="test-icono">♡</div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <div class="footer-marca">
+                <h2>POWERPUFF STORE ✦</h2>
+                <p>Salvando el mundo, una compra a la vez.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explorá</h3>
+                <a href="index.html">Inicio</a>
+                <a href="Pages/tienda.html">Tienda</a>
+                <a href="Pages/personajes.html">Personajes</a>
+                <a href="Pages/juego.html">Juego</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Seguinos</h3>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            <p>© 2026 Powerpuff Store · Proyecto educativo no oficial.</p>
+            <span>Hecho con ♡ en Saltadilla</span>
+        </div>
+
+    </footer>
+
+    <script src="JS/main.js"></script>
+
+</body>
+</html>

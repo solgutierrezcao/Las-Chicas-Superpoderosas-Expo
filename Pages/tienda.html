@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tienda | Las chicas superpoderosas</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+
+    <body>
+        <header class="encabezado">
+            <a href="index.html" class="logo">
+                <span class="logo-icono">✦</span>
+                <span>POWERPUFF <strong>STORE</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html" class="activo">Tienda</a>
+                <a href="juego.html">Jugar</a>
+                <a href="personajes.html">Personajes</a>
+            </nav>
+
+            <button class="boton-carrito" id="abrirCarrito">
+                <i class="bi bi-bag-heart"></i>
+                <span>Mi carrito</span>
+                <span class="contador-carrito" id="contadorCarrito">0</span>
+            </button>
+        </header>
+
+        <main>
+            <section class="tienda-banner">
+                <div class="banner-contenido">
+                    <span class="etiqueta-banner">♡ BIENVENIDA A LA TIENDA ♡</span>
+                    <h1>¡Comprá tu lado <span>superpoderoso!</span></h1>
+                    <p>Encontrá tus productos favoritos de Saltadilla.</p>
+                    <a href="#catalogo" class="boton-principal">Explorar productos <i class="bi bi-arrow-down"></i></a>
+                </div>
+
+                <div class="banner-decoracion">
+                    <span class="estrella estrella-1">✦</span>
+                    <span class="estrella estrella-2">♡</span>
+                    <span class="estrella estrella-3">✧</span>
+                    <div class="circulo-banner">PPG</div>
+                </div>
+            </section>
+
+            <section class="catalogo" id="catalogo">
+                <div class="catalogo-titulo">
+                    <span>EL MEJOR BOTÍN DE SALTADILLA</span>
+                    <h2>Nuestra tienda</h2>
+                    <p>Elegí tus favoritos y llevate un poquito de superpoder a casa.</p>
+                </div>
+
+                <div class="herramientas-tienda">
+                    <div class="buscador">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="buscarProducto" placeholder="¿Qué estás buscando?" />
+                    </div>
+
+                    <select id="ordenarProductos" aria-label="Ordenar productos">
+                        <option value="default">Ordenar por</option>
+                        <option value="menor">Menor precio</option>
+                        <option value="mayor">Mayor precio</option>
+                        <option value="nombre">Nombre A-Z</option>
+                    </select>
+                </div>
+
+                <div class="filtros-categorias">
+                    <button class="filtro activo" data-categoria="todos">Todos</button>
+                    <button class="filtro" data-categoria="peluches">Peluches</button>
+                    <button class="filtro" data-categoria="ropa">Ropa</button>
+                    <button class="filtro" data-categoria="accesorios">Accesorios</button>
+                    <button class="filtro" data-categoria="decoracion">Decoración</button>
+                </div>
+
+                <div class="productos-grid" id="catalogoProductos"></div>
+
+                <p class="sin-resultados" id="sinResultados" hidden>¡Ups! No encontramos productos con esa búsqueda.</p>
+            </section>
+        </main>
+
+        <div class="fondo-carrito" id="fondoCarrito"></div>
+
+        <aside class="carrito-panel" id="carritoPanel">
+            <div class="carrito-encabezado">
+                <div>
+                    <span>♡ TU SELECCIÓN</span>
+                    <h2>Mi carrito</h2>
+                </div>
+                <button id="cerrarCarrito" aria-label="Cerrar carrito">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <div class="carrito-productos" id="carritoProductos">
+                <p class="carrito-vacio">Todavía no agregaste productos ♡</p>
+            </div>
+
+            <div class="carrito-pie">
+                <div class="carrito-total">
+                    <span>Total</span>
+                    <strong id="carritoTotal">$0</strong>
+                </div>
+                <button class="boton-finalizar" id="finalizarCompra">
+                    Finalizar compra <i class="bi bi-arrow-right"></i>
+                </button>
+                <button class="seguir-comprando" id="seguirComprando">Seguir comprando</button>
+            </div>
+        </aside>
+
+        <div class="mensaje-tienda" id="mensajeTienda"></div>
+
+        <footer class="pie-pagina">
+            <p>♡ POWERPUFF STORE ♡</p>
+            <span>¡Salvando Saltadilla y llenando tu carrito!</span>
+        </footer>
+
+        <script src="JS/main.js"></script>
+        <script src="JS/tienda.js"></script>
+    </body>
+</html>

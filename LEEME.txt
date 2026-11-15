@@ -1,0 +1,37 @@
+LAS CHICAS SUPERPODEROSAS — AVENTURA EN SALTADILLA (EDICIÓN MODERNA)
+
+INSTALACIÓN EN VS CODE
+1. Descomprimí el ZIP en una carpeta.
+2. Abrí esa carpeta con Visual Studio Code.
+3. Abrí index.html con la extensión Live Server (clic derecho > Open with Live Server).
+   También podés abrir index.html directamente en un navegador.
+4. Necesitás conexión a Internet para cargar p5.js y p5.sound desde CDN.
+
+ARCHIVOS
+- index.html: página adaptable y contenedor del juego, con estilos modernos.
+- sketch.js: juego completo en p5.js; no requiere imágenes externas.
+
+CONTROLES
+- Flechas ← / → o teclas A / D: moverse.
+- Espacio, W o flecha ↑: salto.
+- Soltá y pulsá de nuevo salto en el aire y mantenelo para volar.
+- X, Z, J, K: disparar.
+- P: pausar.
+- M: música encendida / apagada.
+- Enter: elegir, aceptar o continuar.
+- ESC: volver cuando corresponde.
+
+SE CONSERVA
+- Los 3 personajes, con sus habilidades originales.
+- Los 3 niveles con escenarios específicos y jefes.
+- Monedas Chemical X, power-ups, enemigos, checkpoints y sistema de vidas.
+- La música y los efectos de sonido originales.
+
+CAMBIOS VISUALES
+- Renderizado HD a 960 x 576 con formas suaves (sin pixel art).
+- Personajes, enemigos y jefes redibujados en estilo cartoon vectorial.
+- Escenarios con gradientes, capas de parallax, iluminación y detalles.
+- Menús, selector de personajes, HUD y mensajes completamente rediseñados.
+- Presentación web responsive y navegación del menú con mouse y teclado.
+
+Fan game educativo sin fines de lucro.
