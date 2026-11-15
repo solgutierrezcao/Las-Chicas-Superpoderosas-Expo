@@ -1,108 +1,149 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personajes | Powerpuff Store</title>
+    <meta name="description" content="Conocé a Bombón, Burbuja y Bellota, las heroínas de Saltadilla.">
+    <meta name="theme-color" content="#fff0f7">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Personajes | Las Chicas Superpoderosas</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
     <header class="encabezado">
-        <a href="index.html" class="logo">
-            <span class="logo-icono">✦</span>
-            <span>POWERPUFF <strong>STORE</strong></span>
+        <a href="../index.html" class="logo">
+            <img src="../Assets/Logos/Logo.png" alt="Powerpuff Girls">
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-            <i class="bi bi-list"></i>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
         </button>
 
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html">Inicio</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="juego.html">Jugar</a>
-            <a href="personajes.html" class="activo">Personajes</a>
+        <nav class="menu" id="menuPrincipal">
+            <a href="../index.html" class="btn_menu">Inicio</a>
+            <a href="personajes.html" class="btn_menu activo">Personajes</a>
+            <a href="juego.html" class="btn_juego">
+                Jugar <i class="fa-solid fa-gamepad"></i>
+            </a>
         </nav>
-
-        <a href="tienda.html" class="boton-carrito">
-            <i class="bi bi-bag-heart"></i>
-            <span>Ir a la tienda</span>
-        </a>
     </header>
 
     <main>
 
         <section class="personajes-hero">
             <span>♡ CONOCÉ A LAS HEROÍNAS DE SALTADILLA ♡</span>
-            <h1>Pequeñas, poderosas y <strong>extraordinarias.</strong></h1>
-            <p>Tres chicas, tres personalidades y una misión: salvar el mundo antes de irse a dormir.</p>
+
+            <h1>
+                Pequeñas, poderosas y
+                <strong>extraordinarias.</strong>
+            </h1>
+
+            <p>
+                Tres chicas, tres personalidades y una misión:
+                salvar el mundo antes de irse a dormir.
+            </p>
+
+            <div class="personajes-destellos">
+                ✦ ♡ ✧ ★ ♡ ✦
+            </div>
         </section>
 
         <section class="personajes-seccion">
 
             <div class="personajes-intro">
-                <span>LAS PROTAGONISTAS</span>
+                <span>✦ LAS PROTAGONISTAS ✦</span>
                 <h2>Conocé al equipo</h2>
+                <p>Creadas con azúcar, flores y muchos colores.</p>
             </div>
 
             <div class="personajes-grid">
 
-                <article class="personaje-card bombon">
+                <article class="personaje-tarjeta bombon">
+
                     <div class="personaje-imagen">
                         <span class="personaje-numero">01</span>
-                        <img src="Assets/Personajes/Bombon.png" alt="Bombón">
+                        <img src="../Assets/Personajes/Bombon.png" alt="Bombón">
+                        <span class="personaje-destello">✦</span>
                     </div>
 
                     <div class="personaje-info">
                         <span class="personaje-apodo">LA LÍDER</span>
                         <h3>Bombón</h3>
-                        <p>Inteligente, responsable y decidida. Siempre intenta mantener al equipo unido y encontrar la mejor solución.</p>
+
+                        <p>
+                            Inteligente, responsable y decidida.
+                            Siempre intenta mantener al equipo unido
+                            y encontrar la mejor solución.
+                        </p>
 
                         <div class="personaje-poder">
-                            <i class="bi bi-lightning-charge-fill"></i>
+                            <i class="fa-solid fa-bolt"></i>
                             <span>Inteligencia y liderazgo</span>
                         </div>
                     </div>
+
                 </article>
 
-                <article class="personaje-card burbuja">
+                <article class="personaje-tarjeta burbuja">
+
                     <div class="personaje-imagen">
                         <span class="personaje-numero">02</span>
-                        <img src="Assets/Personajes/Burbuja.png" alt="Burbuja">
+                        <img src="../Assets/Personajes/Burbuja.png" alt="Burbuja">
+                        <span class="personaje-destello">♡</span>
                     </div>
 
                     <div class="personaje-info">
                         <span class="personaje-apodo">LA MÁS DULCE</span>
                         <h3>Burbuja</h3>
-                        <p>Tierna, alegre y sensible. Ama a los animales, pero no hay que subestimarla cuando llega el momento de luchar.</p>
+
+                        <p>
+                            Tierna, alegre y sensible. Ama a los animales,
+                            pero no hay que subestimarla cuando llega
+                            el momento de luchar.
+                        </p>
 
                         <div class="personaje-poder">
-                            <i class="bi bi-heart-fill"></i>
+                            <i class="fa-solid fa-heart"></i>
                             <span>Empatía y valentía</span>
                         </div>
                     </div>
+
                 </article>
 
-                <article class="personaje-card bellota">
+                <article class="personaje-tarjeta bellota">
+
                     <div class="personaje-imagen">
                         <span class="personaje-numero">03</span>
-                        <img src="Assets/Personajes/Bellota.png" alt="Bellota">
+                        <img src="../Assets/Personajes/Bellota.png" alt="Bellota">
+                        <span class="personaje-destello">★</span>
                     </div>
 
                     <div class="personaje-info">
                         <span class="personaje-apodo">LA MÁS VALIENTE</span>
                         <h3>Bellota</h3>
-                        <p>Impulsiva, fuerte y aventurera. Le encanta la acción y nunca retrocede frente a un desafío.</p>
+
+                        <p>
+                            Impulsiva, fuerte y aventurera.
+                            Le encanta la acción y nunca retrocede
+                            frente a un desafío.
+                        </p>
 
                         <div class="personaje-poder">
-                            <i class="bi bi-stars"></i>
+                            <i class="fa-solid fa-star"></i>
                             <span>Fuerza y combate</span>
                         </div>
                     </div>
+
                 </article>
 
             </div>
@@ -112,16 +153,39 @@
             <span>AZÚCAR, FLORES Y MUCHOS COLORES</span>
             <h2>¡Y un ingrediente especial!</h2>
             <p>La fórmula perfecta para convertirse en las heroínas de Saltadilla.</p>
-            <a href="tienda.html">Encontrá tus productos favoritos <i class="bi bi-arrow-right"></i></a>
+
+            <a href="juego.html" class="btn btn-rosa">
+                ¡VAMOS A JUGAR!
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </section>
 
     </main>
 
-    <footer class="pie-pagina">
-        <p>♡ POWERPUFF STORE ♡</p>
-        <span>¡Salvando Saltadilla y llenando tu carrito!</span>
+    <footer class="footer">
+        <div class="footer-contenido">
+
+            <div class="footer-marca">
+                <h2>POWERPUFF GIRLS ✦</h2>
+                <p>¡Salvando el mundo, una aventura a la vez!</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explorá</h3>
+                <a href="../index.html">Inicio</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="juego.html">Juego</a>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            <p>© 2026 Las Chicas Superpoderosas · Proyecto educativo no oficial.</p>
+            <span>Hecho con ♡ en Saltadilla</span>
+        </div>
     </footer>
 
-    <script src="JS/main.js"></script>
+    <script src="../JS/main.js"></script>
+
 </body>
 </html>

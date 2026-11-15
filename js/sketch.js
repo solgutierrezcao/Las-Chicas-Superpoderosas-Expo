@@ -104,20 +104,37 @@ const SFX = {
 
 // ---------- SETUP / DRAW ----------
 function setup() {
+    // Configuración de resolución
     pixelDensity(1);
-    const cnv = createCanvas(W * SC, H * SC);
-    if (document.getElementById("game-container")) cnv.parent("game-container");
-    cnv.elt.setAttribute("aria-label", "Juego de plataformas Las Chicas Superpoderosas");
+
+    // Crear UN SOLO canvas y colocarlo dentro del contenedor HTML
+    const lienzo = createCanvas(W * SC, H * SC);
+    lienzo.parent("juego-contenedor");
+
+    // Accesibilidad
+    lienzo.elt.setAttribute(
+        "aria-label",
+        "Juego de plataformas Las Chicas Superpoderosas"
+    );
+
+    // Suavizado gráfico
     smooth();
+
+    // Crear lienzo interno para los gráficos
     pg = createGraphics(W * SC, H * SC);
     pg.pixelDensity(1);
     pg.smooth();
+
+    // Configuración de texto
     pg.textFont("Trebuchet MS, Arial, sans-serif");
     pg.textStyle(BOLD);
+
+    // Inicializar sonido y juego
     initAudio();
     music = new Music();
     G = new GameManager();
 }
+
 function draw() {
     G.update();
     pg.clear();

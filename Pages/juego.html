@@ -1,112 +1,92 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-AR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fff0f6">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#fff0f6" />
 
-  <title>Las Chicas Superpoderosas | Aventura en Saltadilla</title>
+        <title>Las Chicas Superpoderosas | Aventura en Saltadilla</title>
 
-  <link rel="stylesheet" href="../css/style.css">
-</head>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
 
-<body>
+    <body>
+        <!-- Decoraciones -->
+        <div class="decoracion decoracion-1">♡</div>
+        <div class="decoracion decoracion-2">✦</div>
+        <div class="decoracion decoracion-3">♥</div>
+        <div class="decoracion decoracion-4">✧</div>
+        <div class="decoracion decoracion-5">♡</div>
+        <div class="decoracion decoracion-6">✦</div>
 
-  <!-- Decoraciones -->
-  <div class="decoracion decoracion-1">♡</div>
-  <div class="decoracion decoracion-2">✦</div>
-  <div class="decoracion decoracion-3">♥</div>
-  <div class="decoracion decoracion-4">✧</div>
-  <div class="decoracion decoracion-5">♡</div>
-  <div class="decoracion decoracion-6">✦</div>
+        <main class="juego">
+            <header class="encabezado">
 
-  <main class="shell">
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-    <!-- ENCABEZADO -->
-    <header class="header">
+                <nav class="menu" id="menuPrincipal">
+                    <a href="../index.html" class="btn_menu activo">Inicio</a>
+                    <a href="./personajes.html" class="btn_menu">Personajes</a>
+                    <a href="./juego.html" class="btn_juego"> Jugar <i class="fa-solid fa-gamepad"></i> </a>
+                </nav>
+            </header>
 
-      <div class="brand">
-        <div>
-          <div class="eyebrow"> Fan game</div>
-          <h1>Las Chicas Superpoderosas</h1>
-        </div>
-      </div>
+            <!-- PRESENTACIÓN -->
+            <section class="presentacion">
+                <span class="presentacion-deco">♡ ✧ ♡</span>
 
-      <div class="edition">
-        <span class="online"></span>
-        Aventura en Saltadilla
-      </div>
+                <p class="subtitulo">¡UNA NUEVA AVENTURA COMIENZA!</p>
 
-    </header>
+                <h2>¡Saltadilla necesita tu ayuda!</h2>
 
-    <!-- PRESENTACIÓN -->
-    <section class="presentacion">
+                <p class="descripcion">
+                    La ciudad está en peligro y solamente nuestras tres heroínas pueden salvarla. Prepará tus
+                    superpoderes, enfrentá a los enemigos y convertite en la protectora de Saltadilla.
+                </p>
 
-      <span class="presentacion-deco">♡ ✧ ♡</span>
+                <div class="presentacion-final">
+                    <span>♥</span>
+                    <span>✦</span>
+                    <span>♥</span>
+                </div>
+            </section>
 
-      <p class="subtitulo">¡UNA NUEVA AVENTURA COMIENZA!</p>
+            <!-- JUEGO -->
+            <section class="juego-seccion">
+                <div class="juego-frame" aria-label="Área de juego">
+                    <div id="juego-contenedor"></div>
+                </div>
 
-      <h2>¡Saltadilla necesita tu ayuda!</h2>
+                <!-- CONTROLES -->
+                <div class="bottom">
+                    <p class="hint">
+                        Movete con <kbd>←</kbd><kbd>→</kbd> o <kbd>A</kbd><kbd>D</kbd> · Saltá con <kbd>ESPACIO</kbd> ·
+                        Atacá con <kbd>X</kbd> · Pausa <kbd>P</kbd>
+                    </p>
 
-      <p class="descripcion">
-        La ciudad está en peligro y solamente nuestras tres heroínas
-        pueden salvarla. Prepará tus superpoderes, enfrentá a los
-        enemigos y convertite en la protectora de Saltadilla.
-      </p>
+                    <div class="actions">
+                        <button type="button" onclick="if(typeof G !== 'undefined'){G.st='instr';G.tm=0}">
+                            ? Controles
+                        </button>
 
-      <div class="presentacion-final">
-        <span>♥</span>
-        <span>✦</span>
-        <span>♥</span>
-      </div>
+                        <button type="button" onclick="if(typeof music !== 'undefined')music.toggle()">♫ Sonido</button>
 
-    </section>
+                        <button
+                            type="button"
+                            class="primary"
+                            onclick="if(typeof G !== 'undefined'){if(G.st==='title'){G.sel=0;G.key(13)}else if(G.st==='play'){G.paused=!G.paused}else {G.st='title';G.sel=0}}"
+                        >
+                            ▶ Jugar / pausar
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <!-- JUEGO -->
-    <section class="game-section">
-
-      <div class="game-frame" aria-label="Área de juego">
-        <div id="game-container"></div>
-      </div>
-
-      <!-- CONTROLES -->
-      <div class="bottom">
-
-        <p class="hint">
-          Movete con <kbd>←</kbd><kbd>→</kbd> o
-          <kbd>A</kbd><kbd>D</kbd>
-          · Saltá con <kbd>ESPACIO</kbd>
-          · Atacá con <kbd>X</kbd>
-          · Pausa <kbd>P</kbd>
-        </p>
-
-        <div class="actions">
-
-          <button type="button"
-            onclick="if(typeof G !== 'undefined'){G.st='instr';G.tm=0}">
-            ? Controles
-          </button>
-
-          <button type="button"
-            onclick="if(typeof music !== 'undefined')music.toggle()">
-            ♫ Sonido
-          </button>
-
-          <button type="button" class="primary"
-            onclick="if(typeof G !== 'undefined'){if(G.st==='title'){G.sel=0;G.key(13)}else if(G.st==='play'){G.paused=!G.paused}else {G.st='title';G.sel=0}}">
-            ▶ Jugar / pausar
-          </button>
-
-        </div>
-  </main>
-
-  <!-- LIBRERÍAS Y JUEGO -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
-
-  <script src="../js/sketch.js"></script>
-
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+        <script src="../js/sketch.js"></script>
+    </body>
 </html>
